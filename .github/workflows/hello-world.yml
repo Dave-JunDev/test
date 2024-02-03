@@ -27,10 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run start script
-        run: node index.js
+        run: node index.mjs
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: run test
-        run: node index.js
+        run: node test.mjs
